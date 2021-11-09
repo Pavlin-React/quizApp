@@ -1,4 +1,4 @@
-
+import android.os.Bundle;
 package com.quizapp;
 
 import com.facebook.react.ReactActivity;
@@ -14,4 +14,10 @@ public class MainActivity extends ReactActivity {
     return "quizApp";
   }
 }
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+  super.onCreate(null);
+}
+
 
