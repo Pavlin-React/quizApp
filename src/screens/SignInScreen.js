@@ -4,7 +4,7 @@ import {COLORS} from '../constans/theme';
 import FormInput from '../components/shared/FormInput';
 import FormButton from '../components/shared/FormButton';
 
-const SignInScreen = () => {
+const SignInScreen = ({navigation}) => {
   let [email, setEmail] = useState('');
   let [password, setPassword] = useState('');
 
@@ -51,6 +51,14 @@ const SignInScreen = () => {
         onHandlePress={handleOnSubmit}
         style={{width: '100%'}}
       />
+      <View style={{flexDirection: 'row', alignItems: 'center', marginTop: 10}}>
+        <Text>Don't have an account ?</Text>
+        <Text
+          style={{marginLeft: 4, color: COLORS.primary}}
+          onPress={() => navigation.navigate('SignUpScreen')}>
+          Create account
+        </Text>
+      </View>
     </SafeAreaView>
   );
 };

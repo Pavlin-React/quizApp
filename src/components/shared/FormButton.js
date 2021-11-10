@@ -14,14 +14,14 @@ const FormButton = ({
       activeOpacity={0.9}
       onPress={onHandlePress}
       style={{
-        paddingVertical: 10,
+        paddingVertical: 15,
+        borderRadius: 5,
         backgroundColor: isPrimary ? COLORS.primary : COLORS.white,
         borderColor: COLORS.primary,
         borderWidth: 1,
         ...style,
       }}
-      {...more}  
-    >
+      {...more}>
       <Text
         style={{
           textAlign: 'center',
